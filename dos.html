@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>4.2 ESTRUCTURAS DE CONTROL.</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+    <div class="banner">
+  		<img src="img/fondo.png" alt"" title="" >
+  		<div class="contenedor">
+  			<div class="banner__descripcion" >
+  				<p class="contenedor">4.2</p>
+          <h1 class="contenedor"> ESTRUCTURAS DE CONTROL.</h1>
+  			</div>
+  		</div>
+  	</div>
+    <ul align="center">
+      <img align="center" width="300" src="img/4_3.jpg" alt="">
+    </ul>
+    <p class="destino__txt">Las estructuras de control de flujo que se han visto (if, else, for) y las sentencias que modifican su comportamiento (break, continue) no son suficientes para realizar algunas tareas complejas y otro tipo de repeticiones. Por ese motivo, JavaScript proporciona otras estructuras de control de flujo diferentes y en algunos casos más eficientes.<br><br></p>
+    <h4> Estructura while</h4>
+    <p class="destino__txt">La estructura while permite crear bucles que se ejecutan ninguna o más veces, dependiendo de la condición indicada. Su definición formal es:<br>
+while(condicion) {<br>
+  ...}<br><br>
+El funcionamiento del bucle while se resume en: "mientras se cumpla la condición indicada, repite indefinidamente las instrucciones incluidas dentro del bucle".<br>
+Si la condición no se cumple ni siquiera la primera vez, el bucle no se ejecuta. Si la condición se cumple, se ejecutan las instrucciones una vez y se vuelve a comprobar la condición. Si se sigue cumpliendo la condición, se vuelve a ejecutar el bucle y así se continúa hasta que la condición no se cumpla.<br>
+Evidentemente, las variables que controlan la condición deben modificarse dentro del propio bucle, ya que de otra forma, la condición se cumpliría siempre y el bucle while se repetiría indefinidamente.
+El siguiente ejemplo utiliza el bucle while para sumar todos los números menores o iguales que otro número:<br><br>
+var resultado = 0;<br>
+var numero = 100;<br>
+var i = 0;<br>
+while(i <= numero) {<br>
+  resultado += i;<br>
+  i++;<br>
+}<br>
+alert(resultado);<br><br>
+</p>
+
+<ul align="center">
+      <img align="center" width="300" src="img/4_2.png" alt="">
+    </ul>
+
+<p class="destino__txt">El programa debe sumar todos los números menores o igual que otro dado. Por ejemplo si el número es 5, se debe calcular: 1 + 2 + 3 + 4 + 5 = 15
+Este tipo de condiciones "suma números mientras sean menores o iguales que otro número dado") se resuelven muy fácilmente con los bucles tipo while, aunque también se podían resolver con bucles de tipo for.
+En el ejemplo anterior, mientras se cumpla la condición, es decir, mientras que la variable i sea menor o igual que la variable numero, se ejecutan las instrucciones del bucle.<br>
+Dentro del bucle se suma el valor de la variable i al resultado total (variable resultado) y se actualiza el valor de la variable i, que es la que controla la condición del bucle. Si no se actualiza el valor de la variable i, la ejecución del bucle continua infinitamente o hasta que el navegador permita al usuario detener el script.
+<br><br></p>
+
+
+
+
+
+<div class="banner">
+    <img src="img/fondito.png" alt"" title="" >
+    </div>
+  </body>
+</html>
